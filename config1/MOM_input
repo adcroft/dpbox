@@ -156,7 +156,7 @@ HALF_STRAT_DEPTH = 0.25         !   [nondim] default = 0.5
                                 ! The fractional depth where the stratification is centered.
 JET_WIDTH = 200.0               !   [km]
                                 ! The width of the zonal-mean jet.
-JET_HEIGHT = 150.0              !   [m]
+JET_HEIGHT = 100.0              !   [m]
                                 ! The interface height scale associated with the zonal-mean jet.
 VELOCITY_CONFIG = "phillips"    ! default = "zero"
                                 ! A string that determines how the initial velocities are specified for a new

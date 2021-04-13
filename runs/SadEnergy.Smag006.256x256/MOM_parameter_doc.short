@@ -155,7 +155,7 @@ SPONGE_RATE = 1.157407407407407E-05 !   [s-1] default = 1.157407407407407E-06
                                 ! The rate at which the zonal-mean sponges damp.
 JET_WIDTH = 200.0               !   [km]
                                 ! The width of the zonal-mean jet.
-JET_HEIGHT = 150.0              !   [m]
+JET_HEIGHT = 100.0              !   [m]
                                 ! The interface height scale associated with the zonal-mean jet.
 !Total sponge columns = 0       !
                                 ! The total number of columns where sponges are applied.
