@@ -38,7 +38,7 @@ def interp(old, new, xh, yh, lon, lat, varname, var):
 old = netCDF4.Dataset(args.input_restart_file, 'r')
 
 ni,nj = args.ni,args.nj
-with netCDF4.Dataset('MOM.res.nc','w') as new:
+with netCDF4.Dataset('MOM.res.nc', 'w', format="NETCDF4_CLASSIC") as new:
     yq = old.variables['latq'][:]
     xq = old.variables['lonq'][:]
     yh = old.variables['lath'][:]
