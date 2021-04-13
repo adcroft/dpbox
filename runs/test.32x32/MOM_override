@@ -1,0 +1,5 @@
+! Blank file in which we can put "overrides" for parameters
+NIGLOBAL=32
+NJGLOBAL=32
+DT=1200.
+#override DAYMAX=10.

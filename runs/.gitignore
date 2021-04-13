@@ -1,0 +1,10 @@
+CPU_stats
+*.nc
+MOM_parameter_doc.debugging
+MOM_parameter_doc.layout
+available_diags.000000
+exitcode
+logfile.000000.out
+time_stamp.out
+ocean.stats
+std.out
