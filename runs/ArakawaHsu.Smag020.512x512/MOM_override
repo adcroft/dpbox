@@ -1,0 +1,7 @@
+! Blank file in which we can put "overrides" for parameters
+NIGLOBAL=512
+NJGLOBAL=512
+DT=75.
+DAYMAX=2500.
+#override CORIOLIS_SCHEME = "ARAKAWA_HSU90"
+#override SMAG_BI_CONST = 0.2
