@@ -362,7 +362,7 @@ THICKNESS_CONFIG = "phillips"   ! default = "uniform"
                                 !     USER - call a user modified routine.
 HALF_STRAT_DEPTH = 0.25         !   [nondim] default = 0.5
                                 ! The fractional depth where the stratification is centered.
-JET_WIDTH = 200.0               !   [km]
+JET_WIDTH = 1200.0              !   [km]
                                 ! The width of the zonal-mean jet.
 JET_HEIGHT = 100.0              !   [m]
                                 ! The interface height scale associated with the zonal-mean jet.
