@@ -1,0 +1,6 @@
+! Blank file in which we can put "overrides" for parameters
+NIGLOBAL=128
+NJGLOBAL=128
+DT=450.
+DAYMAX=2500.
+#override CORIOLIS_SCHEME = "SADOURNY75_ENSTRO"
