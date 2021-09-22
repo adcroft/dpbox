@@ -22,7 +22,7 @@ endif
 echo State of run directory:
 ls -lR
 
-time srun -n 800 ./MOM6
+srun -n 800 ../../build/MOM6 2>&1 | tee std.out
 
 echo -n "Job completion time "
 date

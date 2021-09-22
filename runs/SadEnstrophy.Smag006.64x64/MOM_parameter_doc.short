@@ -7,12 +7,7 @@ DT = 900.0                      !   [s]
                                 ! The (baroclinic) dynamics time step.  The time-step that is actually used will
                                 ! be an integer fraction of the forcing time-step (DT_FORCING in ocean-only mode
                                 ! or the coupling timestep in coupled mode.)
-DT_THERM = 1800.0               !   [s] default = 900.0
-                                ! The thermodynamic and tracer advection time step. Ideally DT_THERM should be
-                                ! an integer multiple of DT and less than the forcing or coupling time-step,
-                                ! unless THERMO_SPANS_COUPLING is true, in which case DT_THERM can be an integer
-                                ! multiple of the coupling timestep.  By default DT_THERM is set to DT.
-DTBT_RESET_PERIOD = 8.64E+04    !   [s] default = 1800.0
+DTBT_RESET_PERIOD = -1.0        !   [s] default = 900.0
                                 ! The period between recalculations of DTBT (if DTBT <= 0). If DTBT_RESET_PERIOD
                                 ! is negative, DTBT is set based only on information available at
                                 ! initialization.  If 0, DTBT will be set every dynamics time step. The default
@@ -153,7 +148,7 @@ HALF_STRAT_DEPTH = 0.25         !   [nondim] default = 0.5
                                 ! The fractional depth where the stratificaiton is centered.
 SPONGE_RATE = 1.157407407407407E-05 !   [s-1] default = 1.157407407407407E-06
                                 ! The rate at which the zonal-mean sponges damp.
-JET_WIDTH = 200.0               !   [km]
+JET_WIDTH = 1200.0              !   [km]
                                 ! The width of the zonal-mean jet.
 JET_HEIGHT = 100.0              !   [m]
                                 ! The interface height scale associated with the zonal-mean jet.
@@ -305,18 +300,7 @@ VARIABLE_BUOYFORCE = False      !   [Boolean] default = True
 ! === module MOM_restart ===
 
 ! === module MOM_main (MOM_driver) ===
-DT_FORCING = 3600.0             !   [s] default = 900.0
-                                ! The time step for changing forcing, coupling with other components, or
-                                ! potentially writing certain diagnostics. The default value is given by DT.
 DAYMAX = 2500.0                 !   [days]
                                 ! The final time of the whole simulation, in units of TIMEUNIT seconds.  This
                                 ! also sets the potential end time of the present run segment if the end time is
                                 ! not set via ocean_solo_nml in input.nml.
-RESTART_CONTROL = 3             ! default = 1
-                                ! An integer whose bits encode which restart files are written. Add 2 (bit 1)
-                                ! for a time-stamped file, and odd (bit 0) for a non-time-stamped file. A
-                                ! non-time-stamped restart file is saved at the end of the run segment for any
-                                ! non-negative value.
-RESTINT = 730.0                 !   [days] default = 0.0
-                                ! The interval between saves of the restart file in units of TIMEUNIT.  Use 0
-                                ! (the default) to not save incremental restart files at all.

@@ -5,10 +5,10 @@
 #"cont",     50,"days",1,"days","Time",
 #"diag",    10,"days",1,"days","Time",
 #"trac",    10,"days",1,"days","Time",
-#"mom",     10,"days",1,"days","Time",
+"mom",       2,"days",1,"days","Time",
 #"bt_mom",  10,"days",1,"days","Time",
 "visc",     50,"days",1,"days","Time",
-#"energy",  10,"days",1,"days","Time",
+"energy",    2,"days",1,"days","Time",
 #"ML_TKE",  10,"days",1,"days","Time",
 #"forcing", 10,"days",1,"days","Time",
 
@@ -111,8 +111,8 @@
 #=======================
 #"ocean_model","dudt","dudt","mom","all",.true.,"none",2
 #"ocean_model","dvdt","dvdt","mom","all",.true.,"none",2
-#"ocean_model","CAu","CAu","mom","all",.true.,"none",2
-#"ocean_model","CAv","CAv","mom","all",.true.,"none",2
+"ocean_model","CAu","CAu","mom","all",.true.,"none",2
+"ocean_model","CAv","CAv","mom","all",.true.,"none",2
 #"ocean_model","PFu","PFu","mom","all",.true.,"none",2
 #"ocean_model","PFv","PFv","mom","all",.true.,"none",2
 #"ocean_model","du_dt_visc","du_dt_visc","mom","all",.true.,"none",2
@@ -122,10 +122,10 @@
 #"ocean_model","dudt_dia","dudt_dia","mom","all",.true.,"none",2
 #"ocean_model","dvdt_dia","dvdt_dia","mom","all",.true.,"none",2
 # Subterms that should not be added to a closed budget.
-#"ocean_model","gKEu","gKEu","mom","all",.true.,"none",2
-#"ocean_model","gKEv","gKEv","mom","all",.true.,"none",2
-#"ocean_model","rvxu","rvxu","mom","all",.true.,"none",2
-#"ocean_model","rvxv","rvxv","mom","all",.true.,"none",2
+"ocean_model","gKEu","gKEu","mom","all",.true.,"none",2
+"ocean_model","gKEv","gKEv","mom","all",.true.,"none",2
+"ocean_model","rvxu","rvxu","mom","all",.true.,"none",2
+"ocean_model","rvxv","rvxv","mom","all",.true.,"none",2
 #"ocean_model","PFu_bc","PFu_bc","mom","all",.true.,"none",2
 #"ocean_model","PFv_bc","PFv_bc","mom","all",.true.,"none",2
 
@@ -160,10 +160,10 @@
 #"ocean_model","KE","KE","energy","all",.true.,"none",2
 #"ocean_model","dKE_dt","dKE_dt","energy","all",.true.,"none",2
 #"ocean_model","PE_to_KE","PE_to_KE","energy","all",.true.,"none",2
-#"ocean_model","KE_Coradv","KE_Coradv","energy","all",.true.,"none",2
-#"ocean_model","KE_adv","KE_adv","energy","all",.true.,"none",2
+ "ocean_model","KE_Coradv","KE_Coradv","energy","all",.false.,"none",2
+ "ocean_model","KE_adv","KE_adv","energy","all",.false.,"none",2
 #"ocean_model","KE_visc","KE_visc","energy","all",.true.,"none",2
-#"ocean_model","KE_horvisc","KE_horvisc","energy","all",.true.,"none",2
+ "ocean_model","KE_horvisc","KE_horvisc","energy","all",.false.,"none",2
 #"ocean_model","KE_dia","KE_dia","energy","all",.true.,"none",2
 #
 # Mixed Layer TKE Budget Terms:
